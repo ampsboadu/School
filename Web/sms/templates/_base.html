@@ -1,8 +1,16 @@
-
+{% load static %}
+{% load django_htmx %}
 <!DOCTYPE html>
 <html>
     <head>
         <link href="{% static 'vendor/tailwind/daisyui.css' %}" rel="stylesheet" type="text/css" />
         <script src="{% static 'vendor/tailwind/tailwind.js' %}"></script>
+        {% block title %}{% endblock %}
     </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
 </html>
+
+
+
